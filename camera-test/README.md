@@ -1,10 +1,58 @@
-\# Camera Test Demo
+\# Android 相机自动化测试系统
 
 
 
-\- Device: iQOO 11 Pro  
+一个轻量级工具，用于自动化评估手机摄像头成像质量。
 
-\- Tools: Python + ADB  
 
-\- Function: Auto capture \& image analysis
+
+\## 功能
+
+\- 通过 ADB 自动触发 Android 设备拍照
+
+\- 批量拉取原始照片至本地
+
+\- 使用 OpenCV 分析三项核心图像质量指标：
+
+&nbsp; - \*\*亮度\*\*：评估曝光合理性
+
+&nbsp; - \*\*噪声\*\*：衡量图像纯净度（标准差）
+
+&nbsp; - \*\*清晰度\*\*：判断对焦与抖动（Laplacian 方差）
+
+
+
+\## 技术栈
+
+Python, ADB, OpenCV, Android Debug Bridge
+
+
+
+\## 使用说明
+
+1\. 手机开启 USB 调试
+
+2\. 运行 `python camera\_test.py`
+
+3\. 按提示操作，自动输出分析报告
+
+
+
+\## 示例结果
+
+亮度: 112.45
+
+噪声: 28.76
+
+清晰度: 198.32
+
+
+
+> 注：不同光照/设备下数值会变化。
+
+
+
+\## 作者
+
+陈缙凯 | 东莞理工学院 | 计算机科学与技术
 
