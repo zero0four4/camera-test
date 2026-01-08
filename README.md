@@ -1,6 +1,7 @@
 # Android 相机自动化测试系统
 
-一个轻量级工具，用于自动化评估手机摄像头成像质量。
+一个轻量级工具，用于自动化评估手机摄像头成像质量。  
+旨在模拟真实测试场景，实现从拍照 → 拉取 → 分析 → 输出的全流程自动化。
 
 ## 功能
 - 通过 ADB 自动触发 Android 设备拍照（模拟物理快门）
@@ -17,13 +18,13 @@
 
 > 注：不同光照/设备下数值会变化。清晰度 > 150 通常为良好成像。
 
-## 技术栈
-Python, ADB, OpenCV, Android Debug Bridge
-
 ## 使用说明
 1. 手机开启 USB 调试模式
-2. 运行 `python camera_test_v2.py`
+2. 运行 `python camera_test.py`
 3. 按提示操作，自动输出分析报告
+
+## 技术栈
+Python, ADB, OpenCV, Android Debug Bridge
 
 ## 作者
 陈缙凯 | 东莞理工学院 | 计算机科学与技术
