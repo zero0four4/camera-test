@@ -76,3 +76,30 @@ git clone https://github.com/zero0four4/camera-test.git
 cd camera-test
 pip install opencv-python numpy
 python camera_test.py
+
+📚 知识背景
+本项目参考了 Camera 图像质量评测的行业实践：
+信噪比（SNR） 是 ISO 15739 标准中的核心噪声指标
+影调分析 基于人眼对高光/阴影细节的敏感性
+色温评估 是白平衡调试的基础环节
+均匀区域选择 是专业 IQ 测试（如 Imatest）的标准做法
+即使是单帧 JPEG 图像，也能通过合理方法进行初步客观评估。
+
+🌟 项目亮点
+✅ 不依赖 UI 自动化，仅用 ADB 控制，稳定可靠
+✅ 聚焦成像质量本质，而非简单“截图比对”
+✅ 代码简洁易懂，适合学习 Camera 测试入门
+✅ 完全本地运行，无需联网或云端服务
+
+📅 未来计划
+支持 RAW（DNG）图像解析（使用 rawpy）
+引入动态范围（Dynamic Range）估算
+添加色彩准确性（ΔE）初步分析
+构建 Web UI（Gradio / Streamlit）
+支持多设备并行测试
+
+📄 开源协议
+本项目采用 MIT License。
+
+💡 作者：陈缙凯（东莞理工学院 · 计算机科学与技术）
+🔗 GitHub: https://github.com/zero0four4/camera-test
